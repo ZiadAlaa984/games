@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="Bookmark your favorite sites " name="description">
+    <title>login</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" id="style">
+</head>
+
+<body>
+    <div class="overfolw h-100 w-100 ">
+<div class="container  ">
+    <h1 class="fw-bold h2 text-white pt-1 text-capitalize text-center">log in</h1>
+    <div class="text-start mb-3"><label class="text-white fs-6 pb-1" for="emailInput"><i
+                class="fa-solid me-1 fa-envelope"></i> Email :</label> <input class=" body-bg form-control"
+            id="emailInput" oninput="validation(emailRegex, emailInput)" placeholder="Your email" type="email">
+        <p class="d-none text-danger pt-1 text-start email-wrong">Email must be valid one</p>
+    </div>
+    <div class="text-start mb-3"><label class="text-white fs-6 pb-1" for="passwordInput"><i
+                class="fa-solid me-1 fa-lock"></i> Password :</label> <input oninput="validation(passwordregex, passwordInput)" class=" body-bg form-control"
+            id="passwordInput" placeholder="Your password (min 8 characters)" type="password">
+        <p class="d-none text-danger pt-1 text-start password-wrong">At least one uppercase, lowercase and digit</p>
+    </div>
+        <p class="text-center mb-1 h3" id="exist"></p>
+    <button onclick="login()" class="btn  btn-dark text-capitalize py-2 px-5 w-100">log in</button>
+
+    <p class="text-center h5 text-white mt-1">Don’t have an account? <a href="./sign.html" class="text-warning">SignUp</a></p>
+
+</div>
+    </div>
+
+
+</div>
+
+<script src="js/index.js"></script>
+</body>
+
+</html>

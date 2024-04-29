@@ -1,0 +1,41 @@
+body{
+    background-image: url("../img/images1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    font-family: "Titillium Web", sans-serif;
+}
+.overfolw{
+    background-color: rgba(0, 0, 0, .5);
+}
+.container{
+    width: 70%;
+    min-height: 300px;
+        border: rgba(255, 255, 255, 0.651) 1px solid;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            backdrop-filter: blur(3px);
+}
+@media screen and (max-width:800px) {
+    .container {
+            width:95%;
+}}
+a{
+    text-decoration: none;
+    transition: all ,4s;
+
+}
+a:hover{
+        text-decoration: underline;
+}
+input::placeholder{
+    color: black;
+}
+form button a{
+    text-decoration: none;
+    color: inherit;
+}
